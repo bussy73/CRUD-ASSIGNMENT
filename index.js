@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(officerRoutes);
 app.get('/', (req, res) => {
-    res.status(200).json({ message: 'Welcome to Zuri Training!' });
+    res.status(200).json({ message: 'Welcome to Adebusola world' });
 });
 
 const port = process.env.PORT || 5000;

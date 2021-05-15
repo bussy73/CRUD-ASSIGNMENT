@@ -14,12 +14,12 @@ exports.createNewOfficer = (req, res) => {
     });
 };
 
-exports.fetchOfficer = (req, res) => {
-    Officer.find({}, (error, officer) => {
+exports.fetchOfficers = (req, res) => {
+    Officer.find({}, (error, officers) => {
         if (error) {
             return res.status(500).json({ message: error });
         } else {
-            return res.status(200).json({ message: officer });
+            return res.status(200).json({ message: officers });
         }
     });
 };
