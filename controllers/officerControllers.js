@@ -9,7 +9,7 @@ exports.createNewOfficer = (req, res) => {
         if (error) {
             return res.status(500).json({ message: error });
         } else {
-            return res.status(200).json({ message: "New officer created.", newIntern});
+            return res.status(200).json({ message: "New officer created.", newOfficer});
         }
     });
 };
