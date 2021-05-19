@@ -46,7 +46,7 @@ exports.updateOfficer = (req, res) => {
             return res.status(404).json({ message: "Officer not found. "});
         } else {    
             officer.save((error, updatedOfficer) => {
-                if (erorr) {
+                if (error) {
                     return res.status(500).json({ message: error });
                 } else {
                     return res.status(200).json({ message: "Officer details updated successfully." });
